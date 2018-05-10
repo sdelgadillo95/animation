@@ -1,13 +1,19 @@
 body{
-  background-color: gray;
+  background-color: black;
   border: 30px ridge black;
 }
 h1{
   color: white;
   background-color: black;
-  border: ridge 30px black;
+  border: ridge 30px red;
   position: absolute;
   font-size: 5.0em;
   text-align: center;
   width: 100%;
+}
+nav,li{
+  display: inline;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 1.0px auto;
 }

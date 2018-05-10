@@ -8,26 +8,47 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/ani.css">
   </head>
+  <header>
+<nav>
+<ul>
+  <li><a href="index.html">Homepage</a></li>
+  <li><a href="page1.html">About Me</a></li>
+  <li><a href="page2.html">Gallery</a></li>
+  <li><a href="page3.html">Contact Me</a></li>
+  <li><a href="page4.html">Contact Me</a></li>
+</ul>
+</nav>
+</header>
   <style media="screen">
-  div {
-    margin-left: 20%;
-    margin-top: 15%;
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    position: absolute;
-    -webkit-animation-name:hi;
-    -webkit-animation-duration: 10s;
-    animation-name: hi;
-    animation-duration: 20s;
-}
-@-webkit-keyframes hi {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
-}
+    .stage{
+      border:1px solid red;
+      height: 110px;
+      width: 64px;
+      background-image: url(img/man.jpg);
+      position: relative;
+
+
+    -webkit-animation: play 1.5s steps(12) infinite;
+       animation: play 1.5s steps(12) infinite;}
+    .stage:active{animation-play-state: paused;}
+    }
+  }
+  @keyframes play {
+    from{background-position: 0px;
+  }
+    to{background-position: -775px;}
+  }
+  @-webkit-keyframes play {
+    from{background-position: 0px;}
+    to{background-position: -775px;}
+  }
+  </style>
+</head>
+
+<body>
+<div class="stage">
+
+</div>
   </style>
   <body>
       <h1>Where Is The Love?</h1>
