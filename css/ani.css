@@ -1,3 +1,13 @@
 body{
+  background-color: gray;
+  border: 30px ridge black;
+}
+h1{
+  color: white;
   background-color: black;
+  border: ridge 30px black;
+  position: absolute;
+  font-size: 5.0em;
+  text-align: center;
+  width: 100%;
 }
