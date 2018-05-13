@@ -10,9 +10,19 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/ani.css">
   </head>
+  <header>
+<nav>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="page2.html">Two</a></li>
+  <li><a href="page3.html">Three</a></li>
+  <li><a href="page4.html">Four</a></li>
+</ul>
+</nav>
+</header>
   <style media="screen">
 
-  h1, p, a{
+  h1{
     border: 3px solid red;
     margin-top: 30%;
   }
@@ -28,6 +38,7 @@
     transform:translate(0px,100px);
     transition: all .6s ease-in;
     margin-top: 10%;
+    border: 3px ridge white;
   }
   #hi:hover>h2{
     transform:translate(0px,0px);
@@ -51,15 +62,15 @@
     opacity: 0.3;
   }
   #hi{
-    margin-left: 25%;
+    margin-left: 30%;
     position: absolute;
     border:2px solid gray;
-    height: 900px;
-    width: 1000px;
+    height: 800px;
+    width: 800px;
     overflow:hidden;
    transition: all 3s;
-    background-image:url("imgs/question.jpg");
-    background-size:100%;
+    background-image:url("imgs/money.jpg");
+    background-size:80%;
     background-position:center;
   }
   #hi:hover {
@@ -71,45 +82,6 @@
   /* Frame of the HTML */
 
 
-
-  /* Click me button */
-  a{
-    top:190px;
-    left:50%;
-    position: absolute;
-    display:block;
-    width:120px;
-    margin-left: -60px;
-    background-color:black;
-    color:white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 10px;
-    line-height: 20px;
-    font-family: verdana;
-    transition: all 1.5s ease-out;
-  }
-  div:hover>a{
-    opacity:1;
-  }
-  /* Click me button */
-
-
-  /* paragraph starts */
-  p{
-    color:white;
-    font-family: serif;
-    font-style:oblique;
-    font-size:0.7em;
-    text-align: center;
-    width: 70%;
-    margin: 0px auto;
-    transform: translate(0, 300px);
-    transition: all .6s ease-in;
-  }
-  #hi:hover>p{
-    transform:translate(0 ,0);
-  }
 
   </style>
   <div id="hi">

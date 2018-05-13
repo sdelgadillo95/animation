@@ -8,32 +8,57 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/ani.css">
   </head>
+  <header>
+<nav>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="page2.html">Two</a></li>
+  <li><a href="page3.html">Three</a></li>
+  <li><a href="page4.html">Four</a></li>
+
+</ul>
+</nav>
+</header>
   <style media="screen">
-  div {
-    margin-left: 20%;
-    margin-top: 15%;
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    position: absolute;
-    -webkit-animation-name:hi;
-    -webkit-animation-duration: 10s;
-    animation-name: hi;
-    animation-duration: 20s;
-}
-@-webkit-keyframes hi {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
-}
+  h2{
+    color: white;
+    font-size: 3.0em;
+    border: 2px ridge gray;
+    width: 70%;
+    margin-left: 15%;
+  }
+    .stage{
+      margin-left: 10%;
+      height: 700px;
+      width: 1540px;
+      background-image: url(imgs/animation.jpg);
+      position: relative;
+
+
+    -webkit-animation: play 1.5s steps(5) infinite;
+       animation: play 2.0s steps(5) infinite;}
+    .stage:active{animation-play-state: paused;}
+    }
+  }
+  @keyframes play {
+    from{background-position: 0px;
+  }
+    to{background-position: -775px;}
+  }
+  @-webkit-keyframes play {
+    from{background-position: 0px;}
+    to{background-position: -775px;}
+  }
+  </style>
+</head>
+
+
+<body>
+<div class="stage">
+</div>
   </style>
   <body>
-      <h1>Where Is The Love?</h1>
-      <div>
-        <img src="imgs/question.jpg" alt="question mark">
-      </div>
+      <h2>"Wrong information always shown by the media. Negative images is the main criteria infecting the young minds faster than bacteria."</h2>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
