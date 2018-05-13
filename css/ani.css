@@ -1,15 +1,25 @@
 body{
+<<<<<<< HEAD
   background-color: rgb(26, 31, 35);
+=======
+  background-color: black;
+  border: 30px ridge black;
+>>>>>>> bfd1c5eda8f0affd135ab05edd984578496b1b22
 }
 h1{
   color: white;
   background-color: black;
+<<<<<<< HEAD
   border: ridge 30px white;
+=======
+  border: ridge 30px red;
+>>>>>>> bfd1c5eda8f0affd135ab05edd984578496b1b22
   position: absolute;
   font-size: 5.0em;
   text-align: center;
   width: 100%;
 }
+<<<<<<< HEAD
 nav,li,a{
   color: white;
   display: inline;
@@ -61,3 +71,11 @@ body
   border-right: 30px solid transparent;
   transform: rotate(5deg);
 }
+=======
+nav,li{
+  display: inline;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 1.0px auto;
+}
+>>>>>>> bfd1c5eda8f0affd135ab05edd984578496b1b22
